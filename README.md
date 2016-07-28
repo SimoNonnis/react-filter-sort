@@ -1,2 +1,2 @@
 # react-filter-sort
-Small single page app that filter and sort data
+Small single page app that filters and sorts data
