@@ -5,13 +5,13 @@
 
 .header {
   background-color: var(--wildGreen);
-  padding: 1em;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.filterBlock + .filterBlock {
-  margin-left: 1em;
+.filterBlock {
+  margin: 1em;
 }
 
 .filterBy {
