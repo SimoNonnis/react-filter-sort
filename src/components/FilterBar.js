@@ -20,7 +20,7 @@ class FilterBar extends React.Component {
   }
 
   render() {
-    let buttonText = this.props.state.sortDir ? 'Asc' : 'Desc';
+    let buttonText = this.props.state.sortDir ? 'Desc' : 'Asc';
     return (
       <div className={styles.header}>
         <div className={styles.filterBlock} >
