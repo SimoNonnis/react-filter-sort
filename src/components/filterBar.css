@@ -1,0 +1,54 @@
+@import './css/variables.css';
+
+/* Style
+   ========================================================================== */
+
+.header {
+  background-color: var(--wildGreen);
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.filterBlock + .filterBlock {
+  margin-left: 1em;
+}
+
+.filterBy {
+  margin: 0 0 .3em 0;
+  text-transform: uppercase;
+}
+
+.field {
+  overflow: hidden;
+  padding: .2em;
+  display: block;
+  border: 1px solid var(--lightgrey);
+  background-color: var(--light);
+  width: 10em;
+}
+
+.input {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: 0;
+  width: 100%;
+  padding: 1em;
+}
+
+.sortBtn {
+  cursor:pointer;
+  border:0;
+  -webkit-appearance:none;
+  outline:0;
+  padding: 1.3em;
+  box-shadow:none;
+  user-select:none;
+  text-decoration:none;
+  font-style:normal;
+  color:inherit;
+  background-color: var(--light);
+  border: 1px solid var(--lightgrey);
+  width: 10em;
+}

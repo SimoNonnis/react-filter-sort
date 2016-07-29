@@ -1,0 +1,20 @@
+@import './css/variables.css';
+
+
+/* Style
+   ========================================================================== */
+
+.table {
+  border-collapse: collapse;
+  margin: 1em;
+}
+
+.cell {
+  border: 1px solid var(--lightgrey);
+  text-align: left;
+  padding: .5rem;
+}
+
+.row:nth-child( odd ) {
+  background-color:  var(--bgCol);
+}
