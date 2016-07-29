@@ -49,7 +49,6 @@ class App extends React.Component {
       }),
       sortDir: !this.state.sortDir
     });
-    console.log(this.state);
   }
 
   render() {
