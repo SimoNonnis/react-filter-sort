@@ -10,7 +10,8 @@
     "clean": "rm -rf ./dist/*",
     "prebuild": "mkdir -p ./dist && npm run clean",
     "build": "webpack -p --config webpack.config.prod.js",
-    "stats": "webpack --profile --json > stats.json"
+    "stats": "webpack --profile --json > stats.json",
+    "test": "mocha './src/test/*.test.js' --compilers js:babel-core/register"
   },
   "keywords": [
     "react",

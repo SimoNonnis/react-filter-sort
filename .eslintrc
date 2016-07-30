@@ -13,7 +13,8 @@
   },
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "mocha": true
   },
   // Enable custom plugin known as eslint-plugin-react
   "plugins": [
