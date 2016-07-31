@@ -1,23 +1,24 @@
 import React from 'react';
+import classNames from 'classnames/bind';
 
 import HotelData from './HotelData';
 
 import styles from './hotelList.css';
 
-
-
-
+let cx = classNames.bind(styles);
 
 
 class HotelList extends React.Component {
   render() {
+    let rowClasses = cx('cell', 'header');
+
     return (
       <table className={styles.table}>
         <thead>
           <tr>
-            <th className={styles.cell} >Name</th>
-            <th className={styles.cell} >Stars</th>
-            <th className={styles.cell} >Facilities</th>
+            <th className={rowClasses} >Name</th>
+            <th className={rowClasses} >Stars</th>
+            <th className={rowClasses} >Facilities</th>
           </tr>
         </thead>
         <tbody>

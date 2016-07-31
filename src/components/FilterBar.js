@@ -1,4 +1,5 @@
 import React from 'react';
+import { Debounce } from 'react-throttle';
 
 
 import styles from './filterBar.css';
@@ -20,18 +21,20 @@ class FilterBar extends React.Component {
   }
 
   render() {
-    let buttonText = this.props.state.sortDir ? 'Desc' : 'Asc';
+    let buttonText = this.props.state.sortDir ? 'Asc' : 'Desc';
     return (
       <div className={styles.header}>
         <div className={styles.filterBlock} >
           <p className={styles.filterBy} >filter by facilities</p>
           <span className={styles.field} >
-            <input
-              type="text"
-              className={styles.input}
-              placeholder="Enter name here"
-              onChange={this.onChangeInputHandler}
-            />
+            <Debounce time="400" handler="onKeyUp">
+              <input
+                type="text"
+                className={styles.input}
+                placeholder="Enter name here"
+                onKeyUp={this.onChangeInputHandler}
+              />
+            </Debounce>
           </span>
         </div>
         <div className={styles.filterBlock} >
